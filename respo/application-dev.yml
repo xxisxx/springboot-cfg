@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/xxisxx/springboot-cfg.git
+          search-paths: respo
+          username: 862495134@qq.com
+          password: uway123@XY
+
+server:
+  port: 8010
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
